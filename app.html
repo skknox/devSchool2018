@@ -6,6 +6,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dashboard.css">
+
 </head>
 
 <body>
@@ -22,35 +23,38 @@
                 </li>
             </ul>
         </div>
-        </br>
-        </br>
-        <div class="alert alert-warning" role="alert">
-            You are not in today's lunch pool.
-            <a href="#">Dive In!</a>
-        </div>
-        </br>
-        </br>
-        </br>
-        <div class="row">
-            <div class="col-sm-3">
-                <img src="trophy.png" class="img-rounded circleButton">
+
+        <div class="jumbotron jumbotron-fluid" id="mainJumbo">
+            <div class="container">
+                <h1 id="jumboTitle" class="display-1" style="text-align:center;">Let's Get Lunch!</h1>
             </div>
-            <div class="col-sm-9">
-                <div class="row">
-                    <h4 style="text-align:center;">Your partner today is...</h4>
-                </div>
-                <div class="row">
-                    <div class="card matchCard">
-                        <div class="card-body">
-                            <h5 class="card-title">Finneus Dolphin</h5>
-                            <h5>
-                                <a href="#">Profile | Ocean Profile</a>
-                            </h5>
+        </div>
+        <div>
 
-                        </div>
+            <div class="alert alert-warning" id="signupAlert" role="alert">
+                You are not in today's lunch pool.
+                <a id="optInLink" href="#">Dive In!</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div id="matchCard" class="card">
+
+                    <!-- <img class="card-img-top" src="finneus.jpg" alt="Card image cap"> -->
+                    <div class="card-body">
+                    
+                        <p class="card-text">
+                            <h1>Your partner today is:</h1>
+                               <h2> Finneus Dolphin</h2>
+                        </p>
+                        <a href="#" class="btn btn-primary">Profile</a>
+                        <a href="#" class="btn btn-secondary">Ocean</a>
                     </div>
+
                 </div>
 
+                <br>
             </div>
         </div>
         <div>

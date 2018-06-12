@@ -9,14 +9,43 @@
 .navBar {
   margin-top: 3pc;
 }
-.matchCard {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  width: 110pc;
+#matchCard {
+  text-align: center;
+  background-image: url('testpic.png');
+  background-size: cover;
+  background-position: center center;
 }
-.card {
-    margin: 0 auto; 
-    float: none; 
-    margin-bottom: 10px; 
+#signupAlert {
+  margin-top: 3pc;
+  margin-bottom: 3pc;
 }
-
+.card-body {
+  color: white;
+}
+#mainJumbo {
+  background-image: url('chips-dinner-fast-food-70497.jpg');
+  background-size: cover;
+  color: white;
+  background-position: center center;
+  position: relative;
+  z-index: -2;
+  margin-top: 5px;
+  padding-top: 0pc;
+  padding-bottom: 0pc;
+  height: 350px;
+  opacity: .7;
+}
+#mainJumbo .container {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+#mainJumbo .h1 {
+  text-shadow: 2px 2px #000000;
+}
+.jumbo2 {
+  background-size: cover;
+  color: white;
+  background-position: center center;
+  position: relative;
+  z-index: -2;
+}
