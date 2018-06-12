@@ -21,6 +21,14 @@
   padding-bottom: 50px;
   color: white;
 }
+#pointsDiv {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#pointsDiv .progress {
+  height: inherit;
+}
 .navBar {
   margin-top: 3pc;
 }
