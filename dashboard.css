@@ -12,5 +12,11 @@
 .matchCard {
   margin-top: 0%;
   margin-bottom: 0%;
-  width: 100pc;
+  width: 110pc;
 }
+.card {
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+}
+
