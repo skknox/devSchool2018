@@ -6,12 +6,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="dashboard.css">
-
+    <script src="https://use.fontawesome.com/ae2e855785.js"></script>
 </head>
 
 <body>
 
-    <div class="container">
+    <div>
         <div style="padding-top:3%;">
 
             <ul class="nav nav-tabs justify-content-end">
@@ -29,79 +29,96 @@
                 <h1 id="jumboTitle" class="display-1" style="text-align:center;">Let's Get Lunch!</h1>
             </div>
         </div>
-        <div>
+        <div class="container">
 
             <div class="alert alert-warning" id="signupAlert" role="alert">
                 You are not in today's lunch pool.
                 <a id="optInLink" href="#">Dive In!</a>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
 
-                <div id="matchCard" class="card">
+            <div id="matchCard" class="card">
 
-                    <!-- <img class="card-img-top" src="finneus.jpg" alt="Card image cap"> -->
-                    <div class="card-body">
-                    
-                        <p class="card-text">
-                            <h1>Your partner today is:</h1>
-                               <h2> Finneus Dolphin</h2>
-                        </p>
-                        <a href="#" class="btn btn-primary">Profile</a>
-                        <a href="#" class="btn btn-secondary">Ocean</a>
-                    </div>
+                <!-- <img class="card-img-top" src="finneus.jpg" alt="Card image cap"> -->
+                <div class="card-body">
 
+                    <p class="card-text">
+                        <h1>Your partner today is:</h1>
+                        <h2> Finneus Dolphin</h2>
+                    </p>
+                    <a href="#" class="btn btn-primary">Profile</a>
+                    <a href="#" class="btn btn-secondary">Ocean</a>
                 </div>
 
-                <br>
-            </div>
-        </div>
-        <div>
-            <h3 style="text-align:center;">Leading Lunchers</h3>
-        </div>
-        <div style="margin-bottom:3pc;">
-            <table class="table">
-                <thead>
-                    <th>Rank</th>
-                    <th>Score</th>
-                    <th>Name</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>33</td>
-                        <td>Sydney Knox</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>27</td>
-                        <td>Wesley Evans</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div>
-            <h3>Your points:
-                <span class="badge badge-success">120</span>
-            </h3>
-            <h3>Your badges: </h3>
-            <div>
-                <span>
-                    <img src="trophy.png" class="img-rounded circleButton">
-                </span>
-                <span>
-                    <img src="trophy.png" class="img-rounded circleButton">
-                </span>
-                <span>
-                    <img src="trophy.png" class="img-rounded circleButton">
-                </span>
-                <span>
-                    <img src="trophy.png" class="img-rounded circleButton">
-                </span>
             </div>
 
+            <br>
         </div>
+    </div>
+    <div>
+        <h3 style="text-align:center;">Leading Lunchers</h3>
+    </div>
+    <div style="margin-bottom:3pc;">
+        <table class="table">
+            <thead>
+                <th>Rank</th>
+                <th>Score</th>
+                <th>Name</th>
+            </thead>
+            <tbody>
+                <tr>''
+                    <td>1</td>
+                    <td>33</td>
+                    <td>Sydney Knox</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>27</td>
+                    <td>Wesley Evans</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h3>Your points:
+        <span class="badge badge-success">120</span>
+    </h3>
+    <div id="badgesDiv">
+
+        <h1 class="display-3">Your badges: </h1>
+        <div class="row col-sm-8 offset-sm-2">
+            <span class="col-sm-3 ">
+                <i class="fa fa-star-o circleButton"></i>
+            </span>
+            <span class="col-sm-3">
+                <i class="fa fa-paper-plane-o circleButton"></i>
+            </span>
+            <span class="col-sm-3">
+                <i class="fa fa-comments-o circleButton"></i>
+            </span>
+            <span class="col-sm-3">
+                <i class="fa fa-user-o circleButton"></i>
+            </span>
+        </div>
+        <div class="row col-sm-8 offset-sm-2">
+            <span class="col-sm-3 ">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+            <span class="col-sm-3">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+            <span class="col-sm-3">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+            <span class="col-sm-3">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+        </div>
+
+    </div>
+    </div>
     </div>
 </body>
 
