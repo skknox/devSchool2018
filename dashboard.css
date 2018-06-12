@@ -32,14 +32,18 @@
 .navBar {
   margin-top: 3pc;
 }
-.matchCard {
-  margin-top: 0%;
-  margin-bottom: 0%;
-  width: 100pc;
+#matchCard {
+  text-align: center;
+  background-image: url('testpic.png');
+  background-size: cover;
+  background-position: center center;
 }
 #signupAlert {
   margin-top: 3pc;
   margin-bottom: 3pc;
+}
+.card-body {
+  color: white;
 }
 #mainJumbo {
   background-image: url('chips-dinner-fast-food-70497.jpg');
