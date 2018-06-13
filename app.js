@@ -1,6 +1,7 @@
 function showSignUp() {
     var signUpBox = document.getElementById("signUpBox");
     var signUpAlert = document.getElementById("signupAlert");
+
     if (signUpBox.style.display === "none") {
         signUpBox.style.display = "";
         signUpAlert.style.display = "none";
@@ -12,7 +13,9 @@ function showSignUp() {
 function submitSignUp(){
     var signUpBox = document.getElementById("signUpBox");
     var signUpAlert = document.getElementById("signupAlert");
-        signUpBox.style.display = "none";
+    var matchInfo = document.getElementById("matchInfo");
+    signUpBox.style.display = "none";
+    matchInfo.style.display = "";
 }
 
 

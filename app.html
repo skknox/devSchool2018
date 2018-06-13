@@ -9,57 +9,64 @@
 </head>
 
 <body>
-
-    
     <div>
-        <div style="padding-top:3%;">
-
-            <ul class="nav nav-tabs justify-content-end">
-                <li class="nav-item">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <h4>
                     <a class="nav-link active" href="#">My Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
-                </li>
-            </ul>
-        </div>
+                </h4>
+            </li>
+            <li class="nav-item">
+                <h4>
+                    <a class="nav-link" href="signup.html">Logout</a>
+                </h4>
+            </li>
+        </ul>
+    </div>
 
-        <div class="jumbotron jumbotron-fluid" id="mainJumbo">
-            <div class="container">
-                <h1 id="jumboTitle" class="display-1" style="text-align:center;">Let's Get Lunch!</h1>
-            </div>
-        </div>
+
+    <div class="jumbotron jumbotron-fluid" id="mainJumbo">
+
         <div class="container">
+            <h1 id="jumboTitle" class="display-1" style="text-align:center;">Let's Get Lunch!</h1>
+        </div>
+    </div>
+    <div class="container">
 
-            <div class="alert alert-warning" id="signupAlert" role="alert">
-                You are not in today's lunch pool. <button id="signUpButton" class="btn btn-primary" onclick="showSignUp()">Dive in!</button>
-                
+        <div class="alert alert-warning" id="signupAlert" role="alert">
+            You are not in today's lunch pool.
+            <button id="signUpButton" class="btn btn-primary" onclick="showSignUp()">Dive in!</button>
+
+        </div>
+        <form id="signUpBox" style="display:none;">
+            <label for="lunchChoice">
+                <h4>Where would you like to eat today?</h4>
+            </label>
+            <div class="form-group" id="lunchChoice">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1"> I would like to buy my lunch</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2"> I brought my lunch!</label>
+                </div>
             </div>
-            <form id="signUpBox" style="display:none;">
-                <label for="lunchChoice"><h4>Where would you like to eat today?</h4></label>
-                <div class="form-group" id="lunchChoice">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1"> I would like to buy my lunch</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2"> I brought my lunch!</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="officeChoice"><h4>Current Office:</h4></label>
-                    <select class="form-control" id="officeChoice">
-                        <option>Chicago</option>
-                        <option>Dallas</option>
-                        <option>Atlanta</option>
-                        <option>Houston</option>
-                        <option>New York</option>
-                    </select>
-                </div>
-                <input type="button" onclick="submitSignUp()" class="btn btn-primary" value="Submit"></input>
-            </form>
-            <!--<div class="row border border-dark" id="signUpBox">
+            <div class="form-group">
+                <label for="officeChoice">
+                    <h4>Current Office:</h4>
+                </label>
+                <select class="form-control" id="officeChoice">
+                    <option>Chicago</option>
+                    <option>Dallas</option>
+                    <option>Atlanta</option>
+                    <option>Houston</option>
+                    <option>New York</option>
+                </select>
+            </div>
+            <input type="button" onclick="submitSignUp()" class="btn btn-primary" value="Submit"></input>
+        </form>
+        <!--<div class="row border border-dark" id="signUpBox">
                 <div class="col-sm-6 ">
                     <label for="lunchChoice"><h4>Where would you like to eat today?</h4></label>
                     <div class="row input-group" id="lunchChoice">
@@ -83,11 +90,11 @@
                         </select>
                     </div>
                 </div>-->
-            </div>
-        </div>
     </div>
-    
-    <div class="row">
+    </div>
+    </div>
+
+    <div class="row" id="matchInfo" style="display:none;">
         <div class="col-sm-12">
 
             <div id="matchCard" class="card">
@@ -106,60 +113,104 @@
             </div>
 
             <br>
-       
+
+
+        </div>
+    </div>
+    </div>
+    <div class="row" id="pointsDiv">
+        <h1 class="col-sm-2 offset-sm-2">Your Points: </h1>
+        <div class="progress col-sm-6">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                aria-valuemax="100" style="width: 75%"></div>
+        </div>
+    </div>
+    <div>
+        <h3 style="text-align:center;">Leading Lunchers</h3>
+    </div>
+    <div style="margin-bottom:3pc;" class="container">
+        <table class="table">
+            <thead>
+                <th>Rank</th>
+                <th>Score</th>
+                <th>Name</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>33</td>
+                    <td>Sydney Knox</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>27</td>
+                    <td>Wesley Evans</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>23</td>
+                    <td>Hermione Granger</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>18</td>
+                    <td>Minerva McGonagall</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>Molly Weasley</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>Remus Lupin</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>0</td>
+                    <td>Ron Weasley</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div id="badgesDiv">
+
+        <h1 class="display-3">Your badges: </h1>
+        <div class="row col-sm-8 offset-sm-2">
+            <span class="col-sm-3 ">
+                <i class="fa fa-star-o circleButton"></i>
+            </span>
+            <span class="col-sm-3">
+                <i class="fa fa-paper-plane-o circleButton"></i>
+            </span>
+            <span class="col-sm-3">
+                <i class="fa fa-comments-o circleButton"></i>
+            </span>
+            <span class="col-sm-3">
+                <i class="fa fa-user-o circleButton"></i>
+            </span>
+        </div>
+        <div class="row col-sm-8 offset-sm-2">
+            <span class="col-sm-3 ">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+            <span class="col-sm-3">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+            <span class="col-sm-3">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+            <span class="col-sm-3">
+                <p class="badgeCaption">Top lunchgoer for the month of March!</p>
+            </span>
+        </div>
 
     </div>
     </div>
-</div>
-<div>
-    <h3 style="text-align:center;">Leading Lunchers</h3>
-</div>
-<div style="margin-bottom:3pc;" class="container" >
-    <table class="table">
-        <thead>
-            <th>Rank</th>
-            <th>Score</th>
-            <th>Name</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>33</td>
-                <td>Sydney Knox</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>27</td>
-                <td>Wesley Evans</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="row" id="pointsDiv">
-    <h1 class="col-sm-2 offset-sm-2">Your Points: </h1>
-    <div class="progress col-sm-6">
-        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-    </div>
-</div>
-
-<div id="badgesDiv">
-   
-    <h1 class="display-3">Your badges: </h1>
-    <div class="row col-sm-8 offset-sm-2">
-        <span class="col-sm-3 "><i class="fa fa-star-o circleButton"></i></span>
-        <span class="col-sm-3"><i class="fa fa-paper-plane-o circleButton"></i></span>
-        <span class="col-sm-3"><i class="fa fa-comments-o circleButton"></i></span>
-        <span class="col-sm-3"><i class="fa fa-user-o circleButton"></i></span>
-    </div>
-    <div class="row col-sm-8 offset-sm-2">
-        <span class="col-sm-3 "><p class="badgeCaption">Top lunchgoer for the month of March!</p></span>
-        <span class="col-sm-3"><p class="badgeCaption">Top lunchgoer for the month of March!</p></span>
-        <span class="col-sm-3"><p class="badgeCaption">Top lunchgoer for the month of March!</p></span>
-        <span class="col-sm-3"><p class="badgeCaption">Top lunchgoer for the month of March!</p></span>
-    </div>
-    
-</div>            
-</div>
 
     </div>
 </body>

@@ -45,8 +45,11 @@
 #pointsDiv .progress {
   height: inherit;
 }
-.navBar {
-  margin-top: 3pc;
+.nav {
+  margin-top: 1pc;
+}
+.nav .a {
+  color: white;
 }
 #matchCard {
   text-align: center;
