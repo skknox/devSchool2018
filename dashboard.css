@@ -31,7 +31,7 @@
   padding-right: 0;
 }
 #badgesDiv {
-  background-color: #050a62;
+  background-color: #1f9af8;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -45,8 +45,11 @@
 #pointsDiv .progress {
   height: inherit;
 }
-.navBar {
-  margin-top: 3pc;
+.nav {
+  margin-top: 1pc;
+}
+.nav .a {
+  color: white;
 }
 #matchCard {
   text-align: center;
@@ -91,8 +94,9 @@
 }
 .table-dark {
   color: #fff;
-  background-color: #050a62;
+  background-color: #1f9af8;
 }
 body {
-  background-color: #d9eaf7;
+  background-color: #b6defd;
+  color: #4e4e4e;
 }
