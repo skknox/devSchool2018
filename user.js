@@ -23,6 +23,9 @@ var Cohort;
 })(Cohort || (Cohort = {}));
 var User = /** @class */ (function () {
     function User(name, office, email) {
+        this.lvlUp = function () {
+            this.points++;
+        };
         this.points = 0;
         this.name = name;
         this.office = office;
