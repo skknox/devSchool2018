@@ -41,6 +41,7 @@
 #signupAlert {
   margin-top: 3pc;
   margin-bottom: 3pc;
+  text-align: center;
 }
 .card-body {
   color: white;
@@ -71,4 +72,11 @@
   background-position: center center;
   position: relative;
   z-index: -2;
+}
+.table-dark {
+  color: #fff;
+  background-color: #050a62;
+}
+body {
+  background-color: #d9eaf7;
 }
