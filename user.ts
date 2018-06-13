@@ -19,20 +19,33 @@ enum Cohort {
     M1="M1",
     M2="M2",
     M3="M3"
-
 }
 class User {
     name: string;
     office: Office;
     email: string;
-    cohort: string;
+    cohort: Cohort;
+    funFact: string;
+    points: number;
 
-    constructor(message: string) {
-        this.greeting = message;
+    constructor(name: string, office: Office, email: string) {
+        this.points = 0;
+        this.name = name;
+        this.office = office;
+        this.email = email;
     }
-    greet() {
-        return "Hello, " + this.greeting;
+
+    lvlUp = function(){
+        this.points++;
     }
 }
 
-let greeter = new Greeter("world");
+let userSet = new Array<User>();
+let sydney = new User("Sydney Knox",Office.chicago,"sydney.knox@parivedasolutions.com");
+
+let signUpUser = function(){ 
+    let name = document.getElementById("inputName");
+    let office = document.getElementById("officeLocation");
+}
+ 
+
