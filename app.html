@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <div>
+    <div class="container">
         <ul class="nav justify-content-end">
             <li class="nav-item">
                 <h4>
-                    <a class="nav-link active" href="#">My Profile</a>
+                    <a class="nav-link active" href="profile.html">My Profile</a>
                 </h4>
             </li>
             <li class="nav-item">
@@ -25,7 +25,7 @@
     </div>
 
 
-    <div class="jumbotron jumbotron-fluid" id="mainJumbo">
+    <div class="container jumbotron jumbotron-fluid" id="mainJumbo">
 
         <div class="container">
             <h1 id="jumboTitle" class="display-1" style="text-align:center;">Let's Get Lunch!</h1>
@@ -93,7 +93,7 @@
     </div>
     </div>
     </div>
-
+<div class="container">
     <div class="row" id="matchInfo" style="display:none;">
         <div class="col-sm-12">
 
@@ -117,6 +117,8 @@
 
         </div>
     </div>
+
+</div>
     </div>
     <div class="row" id="pointsDiv">
         <h1 class="col-sm-2 offset-sm-2">Your Points: </h1>
@@ -125,59 +127,32 @@
                 aria-valuemax="100" style="width: 75%"></div>
         </div>
     </div>
-    <div>
-        <h3 style="text-align:center;">Leading Lunchers</h3>
-    </div>
-    <div style="margin-bottom:3pc;" class="container">
-        <table class="table">
-            <thead>
-                <th>Rank</th>
-                <th>Score</th>
-                <th>Name</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>33</td>
-                    <td>Sydney Knox</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>27</td>
-                    <td>Wesley Evans</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>23</td>
-                    <td>Hermione Granger</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>18</td>
-                    <td>Minerva McGonagall</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>6</td>
-                    <td>Molly Weasley</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>2</td>
-                    <td>Remus Lupin</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>0</td>
-                    <td>Ron Weasley</td>
-                </tr>
-
-            </tbody>
-        </table>
-    </div>
-
-
-    <div id="badgesDiv">
+</div>
+<div>
+    <h3 style="text-align:center;">Leading Lunchers</h3>
+</div>
+<div class="container" style="margin-bottom:3pc;" >
+    <table class="table table-dark table-sm table-striped table-bordered">
+        <thead>
+            <th>Rank</th>
+            <th>Score</th>
+            <th>Name</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>33</td>
+                <td>Sydney Knox</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>27</td>
+                <td>Wesley Evans</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    <div class="container" id="badgesDiv">
 
         <h1 class="display-3">Your badges: </h1>
         <div class="row col-sm-8 offset-sm-2">
@@ -209,7 +184,6 @@
             </span>
         </div>
 
-    </div>
     </div>
 
     </div>
