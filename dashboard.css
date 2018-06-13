@@ -1,3 +1,19 @@
+#signUpBox2 {
+  height: 300px;
+  padding: 25px;
+  margin: 25px;
+}
+#signUpBox2 input {
+  margin-right: 7px;
+}
+#signUpBox2 #lunchChoice {
+  height: inherit;
+  font-size: 20px;
+}
+#signUpBox2 #officeChoice {
+  padding-top: 10%;
+  height: inherit;
+}
 .circleButton {
   display: inline-block;
   line-height: 100px;
